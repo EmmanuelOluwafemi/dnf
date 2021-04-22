@@ -1,13 +1,51 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Futura';
+  src: url("../src/assets/fonts/FuturaNewBold-Reg.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Futura';
+  src: url("../src/assets/fonts/FuturaNewMedium-Reg.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../src/assets/fonts/Proxima-Nova-Bold.otf") format("otf");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../src/assets/fonts/ProximaNova-Regular.otf") format("otf");
+  font-weight: 400;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: #594E91;
+  overflow-x: hidden;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #FFF;
+  font-size: 1.125rem;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .active>.nav-link {
+  color: #FEDA00;
 }
