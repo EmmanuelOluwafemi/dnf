@@ -127,7 +127,7 @@ const HeroGrid = Styled.div`
         }
 
         .shift-top-100 {
-            margin-top: 0px;
+            margin-top: -230px;
         }
 
         img {
