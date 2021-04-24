@@ -33,6 +33,10 @@ const AboutStyle = Styled.section`
     width: 100%;
     min-height: 100vh;
 
+    @media (max-width: 768px) {
+        min-height: 60vh;
+    }
+
     .aboutContainer {
         width: 100%;
         max-width: 590px;
@@ -44,6 +48,10 @@ const AboutStyle = Styled.section`
             font-size: 2.5rem;
             color: #fff;
             line-height: 127.66%;
+
+            @media (max-width: 768px) {
+                font-size: 1.5rem;
+            }
         }
 
         h6 {

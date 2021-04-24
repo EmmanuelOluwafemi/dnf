@@ -55,6 +55,10 @@ const RegisterStyle = Styled.div`
         text-transform: uppercase;
         color: #fff;
         margin-bottom: 3rem;
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
     }
 
     form {
@@ -62,6 +66,10 @@ const RegisterStyle = Styled.div`
         background: #fff;
         padding: 6.75rem 6.25rem;
         border-radius: 20px;
+
+        @media (max-width: 768px) {
+            padding: 3rem 1.5rem;
+        }
 
         .inputGroup {
             width: 100%;
@@ -73,6 +81,10 @@ const RegisterStyle = Styled.div`
                 font-weight: 500;
                 color: #373737;
                 display: block;
+
+                @media (max-width: 768px) {
+                    font-size: 1rem;
+                }
             }
 
             input {

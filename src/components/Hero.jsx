@@ -117,6 +117,38 @@ const HeroGrid = Styled.div`
     grid-row-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
+    @media(max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 5rem;
+    }
+
+    .text-item {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        h3 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            max-width: 300px;
+            color: #fff;
+            
+            span {
+                font-family: "Proxima Nova Bold", sans-serif;
+                color: #FEDA00;
+                font-weight: 700;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            color: #fff;
+
+            span {
+                color: #1DB6BC;
+            }
+        }
+    }
+
     .gridItem {
         width: 100%;
         display: flex;
@@ -190,31 +222,44 @@ const HeroGrid = Styled.div`
                 }
             }
         }
-    }
 
-    .text-item {
-        grid-column-start: 1;
-        grid-column-end: 3;
-
-        h3 {
-            font-size: 3rem;
-            text-transform: uppercase;
-            max-width: 300px;
-            color: #fff;
-            
-            span {
-                font-family: "Proxima Nova Bold", sans-serif;
-                color: #FEDA00;
-                font-weight: 700;
+        @media(max-width: 768px) {
+            .shift-top-50, .shift-top-100 {
+                margin-top: 0;
             }
-        }
 
-        p {
-            font-size: 1rem;
-            color: #fff;
+            &.small {
+            align-items: flex-end;
 
-            span {
-                color: #1DB6BC;
+            &.left {
+                align-items: flex-start;
+            }
+
+            .smallCard {
+                width: 100%;
+
+                &.shift-top-100 {
+                    margin-top: 0;
+                }
+
+                &.shift-top-50 {
+                    margin-top: 0;
+                }
+
+                &.shift-bottom-100 {
+                    margin-top: 0;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+
+                    &.logo {
+                        width: 100px;
+                        height: auto;
+                        margin-top: -4px;
+                    }
+                }
             }
         }
     }

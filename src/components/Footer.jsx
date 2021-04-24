@@ -18,7 +18,7 @@ const Footer = () => {
                     <a href="linkedin.com"><FaLinkedinIn className="icons" /></a>
                 </div>
             </div>
-            <div className="text-center copy mb-4">Copyright © Perxels 2021</div>
+            <div className="text-center copy mt-4 mb-5">Copyright © Perxels 2021</div>
         </FooterStyle>
     )
 }

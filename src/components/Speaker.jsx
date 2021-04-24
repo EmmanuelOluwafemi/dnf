@@ -66,5 +66,10 @@ const SpeakerStyle = Styled.div`
         font-size: 2.5rem;
         color: #fff;
         margin: 1.5rem 0;
+
+        @media (max-width: 768px) {
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+        }
     }
 `;
