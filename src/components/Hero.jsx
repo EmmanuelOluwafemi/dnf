@@ -118,13 +118,18 @@ const HeroGrid = Styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
     @media(max-width: 768px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         margin-top: 5rem;
     }
 
     .text-item {
         grid-column-start: 1;
         grid-column-end: 3;
+
+        @media (max-width: 768px) {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
 
         h3 {
             font-size: 3rem;
@@ -174,6 +179,10 @@ const HeroGrid = Styled.div`
             font-size: 1rem;
             color: #fff;
             margin-top: 12px;
+
+            @media (max-width: 768px) {
+                font-size: .8rem;
+            }
         }
 
         p {
@@ -187,6 +196,10 @@ const HeroGrid = Styled.div`
             width: 100px;
             height: auto;
             margin-top: -4px;
+
+            @media (max-width: 768px) {
+                width: 60px;
+            }
         }
 
         &.small {
@@ -220,6 +233,10 @@ const HeroGrid = Styled.div`
                         width: 100px;
                         height: auto;
                         margin-top: -4px;
+
+                        @media (max-width: 768px) {
+                            width: 60px;
+                        }
                     }
                 }
             }
@@ -260,6 +277,10 @@ const HeroGrid = Styled.div`
                         width: 100px;
                         height: auto;
                         margin-top: -4px;
+
+                        @media (max-width: 768px) {
+                            width: 60px;
+                        }
                     }
                 }
             }
