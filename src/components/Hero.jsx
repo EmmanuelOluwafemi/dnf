@@ -131,6 +131,8 @@ const HeroGrid = Styled.div`
             text-transform: uppercase;
             max-width: 300px;
             color: #fff;
+            font-family: "Proxima Nova", sans-serif;
+            font-weight: 400;
             
             span {
                 font-family: "Proxima Nova Bold", sans-serif;
