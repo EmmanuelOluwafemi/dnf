@@ -15,13 +15,13 @@ const Header = () => {
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item text-center active">
                             <a class="nav-link" href="https://perxels.com">Home</a>
                         </li>
-                        <li class="nav-item px-0 px-md-4">
+                        <li class="nav-item text-center px-0 px-md-4">
                             <a class="nav-link" href="https://perxels.com">About</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item text-center">
                             <a class="nav-link" href="https://perxels.com">Speaker</a>
                         </li>
                     </ul>
