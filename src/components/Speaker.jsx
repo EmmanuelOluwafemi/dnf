@@ -16,8 +16,7 @@ const Speaker = () => {
             name: "Ayo Onasanya",
             stack: "Founder, Acumen Digital",
             img: designer_1,
-            speach: "Ayo Onasanya is the Founder and Director at Acumen Digital, an award-winning product development agency that helps businesses and individuals build products that scale. Acumen has provided digital transformation services for leading companies including Casio, PharmAccess Foundation, Union Bank, Lagos Business School, Trove, WalletAfrica, Spleet to mention a few; shape their brand image and overall product experience.",
-            more: "new ne",
+            speach: "Ayo Onasanya is the Founder and Director at Acumen Digital, an award-winning product development agency that helps businesses and individuals build products that scale. Acumen has provided digital transformation services for leading companies including Casio, PharmAccess Foundation, Union Bank, Lagos Business School, Trove, WalletAfrica, Spleet to mention a few; shape their brand image and overall product experience. Ayo has been helping companies plan, design and develop their digital products for over eight years. He has worked closely with early-stage startups, as well as enterprise and publicly traded companies.",
             twitter: "https://twitter.com/AyomideOnasanya",
             instagram: "https://www.instagram.com/ayo_onas/",
             schedule: "May 8, 5pm GMT+1",
@@ -39,8 +38,7 @@ const Speaker = () => {
             name: "Victor Fatanmi",
             stack: "Founder, FourthCanvas",
             img: designer_4,
-            speach: "Victor Fatanmi is the co-founder of Fourth Canvas, a design agency credited for delivering awesomeness on successful presidential election media campaigns in Nigeria and Ghana as well on famous online media campaigns like the #StopEbola (2014) & a growing number of brand identity projects for businesses in Lagos and New York. Victor Fa grew up with a curiosity about designs and brands.",
-            more: "new ne",
+            speach: "Victor Fatanmi is the co-founder of Fourth Canvas, a design agency credited for delivering awesomeness on successful presidential election media campaigns in Nigeria and Ghana as well on famous online media campaigns like the #StopEbola (2014) & a growing number of brand identity projects for businesses in Lagos and New York. He grew up with a curiosity about designs and brands. Prior to co-founding the agency FourthCanvas, he worked as a graphic designer at the inception of the unconventional Rele Gallery, and was art director at Red Media Africa. He has supported over 100 young and upwardly mobile graphic designers using different platforms through training in the art and craft of graphic design.",
             twitter: "https://twitter.com/ZeroToProDesign",
             instagram: "https://www.instagram.com/victorfatanmi",
             schedule: "May 22, 5pm GMT+1",
@@ -61,7 +59,7 @@ const Speaker = () => {
             <div className="container">
                 <h1>speakers</h1>
                 {data.map(speaker => (
-                    <SpeakerCard key={speaker.id} name={speaker.name} img={speaker.img} stack={speaker.stack} speach={speaker.speach} twitter={speaker.twitter} instagram={speaker.instagram} linkedin={speaker.linkedin} schedule={speaker.schedule} more={speaker.more} />
+                    <SpeakerCard key={speaker.id} name={speaker.name} img={speaker.img} stack={speaker.stack} speach={speaker.speach} twitter={speaker.twitter} instagram={speaker.instagram} linkedin={speaker.linkedin} schedule={speaker.schedule} />
                 )
                 )}
             </div>
