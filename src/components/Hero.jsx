@@ -8,10 +8,10 @@ import Header from './Header';
 import logo from '../assets/images/logo.svg';
 
 // Images
-import designer_1 from '../assets/images/Designer_1.jpg';
-import designer_2 from '../assets/images/Designer_2.jpg';
-import designer_3 from '../assets/images/Designer_3.jpg';
-import designer_4 from '../assets/images/Designer_4.jpg';
+import designer_1 from '../assets/images/designer_1.jpg';
+import designer_2 from '../assets/images/designer_2.jpg';
+import designer_3 from '../assets/images/designer_3.jpg';
+import designer_4 from '../assets/images/designer_4.jpg';
 
 // Logo
 import designer_1_logo from '../assets/images/designer_1_logo.svg';
