@@ -12,10 +12,10 @@ const Footer = () => {
         <FooterStyle>
             <div className="text-center">
                 <div className="social-icon">
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.medium.com/@perxels"><AiFillMediumSquare className="icons" /></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/perxels"><AiOutlineTwitter className="icons" /></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/perxels/"><AiFillInstagram className="icons" /></a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/perxels/"><FaLinkedinIn className="icons" /></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.medium.com/@perxels"><AiFillMediumSquare className="icons" /></a>
+                    <a target="_blank" rel="noreferrer" href="https://twitter.com/perxels"><AiOutlineTwitter className="icons" /></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.instagram.com/perxels/"><AiFillInstagram className="icons" /></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/perxels/"><FaLinkedinIn className="icons" /></a>
                 </div>
             </div>
             <div className="text-center copy mt-4 mb-5">Copyright © Perxels 2021</div>
