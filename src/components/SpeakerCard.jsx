@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Styled from 'styled-components';
 
 // icons
@@ -6,7 +6,13 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 
-const SpeakerCard = ({name, img, stack, speach, twitter, instagram, linkedin, schedule}) => {
+const SpeakerCard = ({name, img, stack, speach, twitter, instagram, linkedin, schedule, more}) => {
+
+    // const [toggleMore, setMore] = useState(false);
+
+    // const handleMore = () => {
+    //     setMore(!toggleMore);
+    // }
 
     return (
         <SpeakerCardStyle>
@@ -18,6 +24,8 @@ const SpeakerCard = ({name, img, stack, speach, twitter, instagram, linkedin, sc
                     <h3>{name}</h3>
                     <p>{stack}</p>
                     <p>{speach}</p>
+                    {/* <p>{speach} {more && !toggleMore ? <span onClick={handleMore}>Read More</span> : ''}</p> */}
+                    {/* {toggleMore && <p>{more}</p>} */}
                     <div className="social-icon">
                         <a href={twitter}><AiOutlineTwitter /></a>
                         <a href={instagram}><AiFillInstagram /></a>
@@ -54,6 +62,12 @@ const SpeakerCardStyle = Styled.section`
         font-size: 1rem;
         max-width: 655px;
         width: 100%;
+
+        span {
+            font-family: "Proxima Nova Bold", sans-serif;
+            font-weight: 700;
+            cursor: pointer;
+        }
     }
 
     .social-icon {

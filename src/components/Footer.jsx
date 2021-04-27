@@ -12,10 +12,10 @@ const Footer = () => {
         <FooterStyle>
             <div className="text-center">
                 <div className="social-icon">
-                    <a href="medium.com"><AiFillMediumSquare className="icons" /></a>
-                    <a href="twitter.com"><AiOutlineTwitter className="icons" /></a>
-                    <a href="instagram.com"><AiFillInstagram className="icons" /></a>
-                    <a href="linkedin.com"><FaLinkedinIn className="icons" /></a>
+                    <a target="_blank" href="https://www.medium.com/@perxels"><AiFillMediumSquare className="icons" /></a>
+                    <a target="_blank" href="https://twitter.com/perxels"><AiOutlineTwitter className="icons" /></a>
+                    <a target="_blank" href="https://www.instagram.com/perxels/"><AiFillInstagram className="icons" /></a>
+                    <a target="_blank" href="https://www.linkedin.com/company/perxels/"><FaLinkedinIn className="icons" /></a>
                 </div>
             </div>
             <div className="text-center copy mt-4 mb-5">Copyright © Perxels 2021</div>

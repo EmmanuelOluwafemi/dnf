@@ -151,6 +151,7 @@ const HeroStyle = Styled.section`
             &.icon {
                 width: 86px;
                 height: auto;
+                margin-top: -1rem;
             }
         }
 
