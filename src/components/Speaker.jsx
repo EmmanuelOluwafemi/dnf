@@ -27,7 +27,7 @@ const Speaker = () => {
             name: "James Baduor",
             stack: "Co-founder, ADPList",
             img: designer_2,
-            speach: "I am the Cofounder and Chief Product Officer at ADPList, a platform with a mission to democratise mentorship worldwide. Also a designer and tech entrepreneur who's main goal is to use community-driven initiatives and education to grow amazing talents in Africa.",
+            speach: "James Baduor is the Cofounder and Chief Product Officer at ADPList, a platform with a mission to democratise mentorship worldwide. Also, a designer and tech entrepreneur whose main goal is to use community-driven initiatives and education to grow amazing talents in Africa.",
             twitter: "https://twitter.com/jmsbaduor",
             instagram: "https://www.instagram.com/jmsbaduor/",
             schedule: "May 15, 5pm GMT+1",
