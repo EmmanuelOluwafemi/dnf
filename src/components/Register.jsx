@@ -18,7 +18,7 @@ const Register = () => {
                             <input type="email" required/>
                         </div>
                         <div className="inputGroup">
-                            <label>Phone Number</label>
+                            <label>Profession</label>
                             <input type="text" required/>
                         </div>
                         <div className="inputGroup">

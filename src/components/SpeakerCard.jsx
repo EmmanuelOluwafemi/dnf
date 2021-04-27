@@ -6,7 +6,8 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 
-const SpeakerCard = ({name, img, stack, speach}) => {
+const SpeakerCard = ({name, img, stack, speach, twitter, instagram, linkedin, schedule}) => {
+
     return (
         <SpeakerCardStyle>
             <div className="row">
@@ -18,9 +19,10 @@ const SpeakerCard = ({name, img, stack, speach}) => {
                     <p>{stack}</p>
                     <p>{speach}</p>
                     <div className="social-icon">
-                        <a href="twitter.com"><AiOutlineTwitter /></a>
-                        <a href="instagram.com"><AiFillInstagram /></a>
-                        <a href="linkedin.com"><FaLinkedinIn /></a>
+                        <a href={twitter}><AiOutlineTwitter /></a>
+                        <a href={instagram}><AiFillInstagram /></a>
+                        <a href={linkedin}><FaLinkedinIn /></a>
+                        <span>{schedule}</span>
                     </div>
                 </div>
             </div>
@@ -59,10 +61,21 @@ const SpeakerCardStyle = Styled.section`
             font-size: 1.5rem;
             color: #fff;
             margin-right: 1rem;
+            cursor: pointer;
 
             &:hover {
                 color: #FEDA00;
             }
+        }
+
+        span {
+            font-family: "Proxima Nova Bold", sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 7px 1.07rem;
+            color: #34296B;
+            background: #FFF6BE;
+            border-radius: 60px;
         }
     }
 `;

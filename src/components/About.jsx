@@ -3,24 +3,24 @@ import Styled from 'styled-components';
 
 const About = () => {
     return (
-        <AboutStyle>
+        <AboutStyle id="about">
             <div className="container">
                 <div className="aboutContainer">
                     <h3>ABOUT <br/> DESIGNERS NOW FOUNDERS</h3>
                     <h6>Connecting with exceptional minds</h6>
-                    <p>Anim culpa ipsum nisi deserunt pariatur anim pariatur duis irure quis ullamco minim duis laboris. 
-                    Dolor quis do deserunt deserunt in excepteur laborum cillum minim qui commodo aliqua enim.  
-                    </p>
-                    <p>Cillum et commodo nisi officia eiusmod ullamco occaecat in do enim quis magna nulla pariatur. 
-                    Qui officia culpa minim consectetur quis velit dolor mollit ea incididunt irure culpa.  
-                    </p>
-                    <p>Fugiat consequat minim enim amet ad cupidatat anim ut nulla labore incididunt. In voluptate qui veniam magna. 
-                    Esse irure consequat tempor nostrud. Qui laborum sint exercitation mollit do ad consequat do voluptate 
-                    </p>
-                    <p className="mb-5">Excepteur consequat nostrud irure ea ex aute exercitation reprehenderit sint eu nulla. Ipsum quis non 
-                    reprehenderit qui consequat ipsum qui anim anim do proident pariatur quis.
-                    </p>
-                    <a href="./#register">REGISTER NOW</a>
+                    <p>A lot of times, young and aspiring UIUX designers limit the possibility of what they can do, 
+                    they look at their role and work from a small perspective and it can limit their potential. </p>
+
+                    <p>We want to change that narrative, hence the reason for this series “Designer Now Founders” </p>
+
+                    <p>The focus of the series is to show young designers how to become better in solving problems, look at 
+                    situations from a broader perspective and create valuable solutions that can lead to the establishment of 
+                    relevant businesses or companies.</p>
+
+                    <p className="pb-5">We are bringing in experienced product designers who are now founder's of thriving 
+                    companies and organisations to come speak with you in this series so you can learn from their thought process, 
+                    expand your problem solving skills and be inspired to take up more challenge</p>
+                    <a className="mt-4" href="./#register">REGISTER NOW</a>
                 </div>
             </div>
         </AboutStyle>

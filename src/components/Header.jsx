@@ -19,10 +19,10 @@ const Header = () => {
                             <a class="nav-link" href="https://perxels.com">Home</a>
                         </li>
                         <li class="nav-item text-center px-0 px-md-4">
-                            <a class="nav-link" href="https://perxels.com">About</a>
+                            <a class="nav-link" href="/#about">About</a>
                         </li>
                         <li class="nav-item text-center">
-                            <a class="nav-link" href="https://perxels.com">Speaker</a>
+                            <a class="nav-link" href="/#speaker">Speaker</a>
                         </li>
                     </ul>
                 </div>

@@ -8,91 +8,88 @@ import Header from './Header';
 import logo from '../assets/images/logo.svg';
 
 // Images
-import designer_1 from '../assets/images/designer_1.jpg';
-import designer_2 from '../assets/images/designer_2.jpg';
-import designer_3 from '../assets/images/designer_3.jpg';
-import designer_4 from '../assets/images/designer_4.jpg';
-import designer_5 from '../assets/images/designer_5.jpg';
-import designer_6 from '../assets/images/designer_6.jpg';
-import designer_7 from '../assets/images/designer_7.jpg';
-import designer_8 from '../assets/images/designer_8.jpg';
+import designer_1 from '../assets/images/Designer_1.jpg';
+import designer_2 from '../assets/images/Designer_2.jpg';
+import designer_3 from '../assets/images/Designer_3.jpg';
+import designer_4 from '../assets/images/Designer_4.jpg';
+
+// Logo
+import designer_1_logo from '../assets/images/designer_1_logo.svg';
+import designer_2_logo from '../assets/images/designer_2_logo.svg';
+import designer_3_logo from '../assets/images/desinger_3_logo.svg';
 
 const Hero = () => {
     return (
         <HeroStyle>
             <Header />
             <div className="container">
-                <HeroGrid>
-                    <div className="gridItem text-item">
-                        <h3>DESIGNERS NOW <span>FOUNDERS</span></h3>
+                <div className="text-item">
+                    <h3>DESIGNERS NOW <span>FOUNDERS</span></h3>
+                    <p>Connecting with <span>Designers</span> that are now <span>Founders</span> in the Industry </p>
+                </div>
 
-                        <p>Connecting with <span>Designers</span> that are now <span>Founders</span> in the Industry </p>
+                {/* Desktop */}
+                <div className="d-none d-md-flex row align-items-center">
+                    <div className="col-md-4 designers-card">
+                        <img src={designer_1} alt="Ayo Onasanya face"/>
+                        <h3>Ayo Onasanya</h3>
+                        <p>Founder, Acumen Digital</p>
+                        <img className="icon" src={designer_1_logo} alt="designer 1 logo"/>
                     </div>
-                    <div className="gridItem small">
-                        <div className="smallCard">
-                            <img src={designer_1} alt="designers face" />
-                            <h6>Abiodun Okunade</h6>
+
+                    <div className="col-md-4">
+                        <div className="col-md-12 designers-card">
+                            <img src={designer_2} alt="Ayo Onasanya face"/>
+                            <h3>James Baduor</h3>
+                            <p>Co-founder, ADPList</p>
+                            <img className="icon" src={designer_2_logo} alt="designer 1 logo"/>
+                        </div>
+                        <div className="col-md-12 designers-card mt-5">
+                            <img src={designer_3} alt="Ayo Onasanya face"/>
+                            <h3>Abiodun Okunade</h3>
                             <p>Team Lead</p>
-                            <img class="logo" src={logo} alt="perxels logo"/>
+                            <img className="icon" src={logo} alt="designer 1 logo"/>
                         </div>
                     </div>
-                    <div className="gridItem">
-                        <div className="designCard">
-                            <img src={designer_2} alt="designers face" />
-                            <h6>Abiodun Okunade</h6>
-                            <p>Team Lead</p>
-                            <img class="logo" src={logo} alt="perxels logo"/>
-                        </div>
+
+                    <div className="col-md-4 designers-card">
+                        <img src={designer_4} alt="Ayo Onasanya face"/>
+                        <h3>Victor Fatanmi</h3>
+                        <p>Founder, FourthCanvas</p>
+                        <img className="icon" src={designer_3_logo} alt="designer 1 logo"/>
                     </div>
-                    <div className="gridItem small left">
-                        <div className="smallCard shift-top-50">
-                            <img src={designer_3} alt="designers face" />
-                            <h6>Abiodun Okunade</h6>
-                            <p>Team Lead</p>
-                            <img class="logo" src={logo} alt="perxels logo"/>
-                        </div>
+                </div>
+
+                {/* Mobile */}
+
+                <div className="d-flex d-md-none row">
+                    <div className="col-6 designers-card">
+                        <img src={designer_1} alt="Ayo Onasanya face"/>
+                        <h3>Ayo Onasanya</h3>
+                        <p>Founder, Acumen Digital</p>
+                        <img className="icon" src={designer_1_logo} alt="designer 1 logo"/>
                     </div>
-                    <div className="gridItem small left">
-                        <div className="smallCard shift-top-100">
-                            <img src={designer_4} alt="designers face" />
-                            <h6>Abiodun Okunade</h6>
-                            <p>Team Lead</p>
-                            <img class="logo" src={logo} alt="perxels logo"/>
-                        </div>
+
+                    <div className="col-6 designers-card pt-4">
+                        <img src={designer_2} alt="Ayo Onasanya face"/>
+                        <h3>James Baduor</h3>
+                        <p>Co-founder, ADPList</p>
+                        <img className="icon" src={designer_2_logo} alt="designer 1 logo"/>
                     </div>
-                    <div className="gridItem">
-                        <div className="designCard shift-top-50">
-                            <img src={designer_5} alt="designers face" />
-                            <h6>Abiodun Okunade</h6>
-                            <p>Team Lead</p>
-                            <img class="logo" src={logo} alt="perxels logo"/>
-                        </div>
+                    <div className="col-6 designers-card">
+                        <img src={designer_3} alt="Ayo Onasanya face"/>
+                        <h3>Abiodun Okunade</h3>
+                        <p>Team Lead</p>
+                        <img className="icon" src={logo} alt="designer 1 logo"/>
                     </div>
-                    <div className="gridItem small left">
-                        <div className="smallCard shift-bottom-100">
-                            <img src={designer_6} alt="designers face" />
-                            <h6>Abiodun Okunade</h6>
-                            <p>Team Lead</p>
-                            <img class="logo" src={logo} alt="perxels logo"/>
-                        </div>
+                    <div className="col-6 designers-card pt-4">
+                        <img src={designer_4} alt="Ayo Onasanya face"/>
+                        <h3>Victor Fatanmi</h3>
+                        <p>Founder, FourthCanvas</p>
+                        <img className="icon" src={designer_3_logo} alt="designer 1 logo"/>
                     </div>
-                    <div className="gridItem">
-                        <div className="designCard shift-top-50">
-                            <img src={designer_7} alt="designers face" />
-                            <h6>Abiodun Okunade</h6>
-                            <p>Team Lead</p>
-                            <img class="logo" src={logo} alt="perxels logo"/>
-                        </div>
-                    </div>
-                    <div className="gridItem">
-                        <div className="designCard shift-top-100">
-                            <img src={designer_8} alt="designers face" />
-                            <h6>Abiodun Okunade</h6>
-                            <p>Team Lead</p>
-                            <img class="logo" src={logo} alt="perxels logo"/>
-                        </div>
-                    </div>
-                </HeroGrid>
+                </div>
+
             </div>
         </HeroStyle>
     )
@@ -106,29 +103,15 @@ const HeroStyle = Styled.section`
     background: url(${pattern});
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 3rem;
-`;
-
-const HeroGrid = Styled.div`
-    margin-top: 11.25rem;
-    width: 100%;
-    display: grid;
-    grid-column-gap: 20px;
-    grid-row-gap: 40px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-    @media(max-width: 768px) {
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 5rem;
-    }
+    padding-bottom: 5rem;
 
     .text-item {
-        grid-column-start: 1;
-        grid-column-end: 3;
+        width: 100%;
+        max-width: 600px;
+        margin-top: 7rem;
 
         @media (max-width: 768px) {
-            grid-column-start: 1;
-            grid-column-end: 4;
+            margin-top: 4rem;
         }
 
         h3 {
@@ -156,134 +139,54 @@ const HeroGrid = Styled.div`
         }
     }
 
-    .gridItem {
+    
+
+    .designers-card {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-
-        .shift-top-50 {
-            margin-top: -140px;
-        }
-
-        .shift-top-100 {
-            margin-top: -230px;
-        }
 
         img {
             width: 100%;
+            height: auto;
+
+            &.icon {
+                width: 86px;
+                height: auto;
+            }
         }
 
-        h6 {
-            font-family: 'Proxima Nova Bold', sans-serif;
-            font-weight: 700;
-            font-size: 1rem;
+        h3 {
+            font-family: "Proxima Nova Bold", sans-serif;
+            font-weight: bold;
             color: #fff;
-            margin-top: 12px;
-
-            @media (max-width: 768px) {
-                font-size: .8rem;
-            }
+            font-size: 1.5rem;
+            margin-top: 1rem;
         }
 
         p {
-            font-family: 'Proxima Nova', sans-serif;
+            font-family: "Proxima Nova", sans-serif;
             font-weight: 400;
-            font-size: .9rem;
             color: #fff;
+            font-size: 1rem;
         }
 
-        .logo {
-            width: 100px;
-            height: auto;
-            margin-top: -4px;
+        @media (max-width: 768px) {
+            margin-bottom: 1.5rem;
 
-            @media (max-width: 768px) {
-                width: 60px;
-            }
-        }
 
-        &.small {
-            align-items: flex-end;
-
-            &.left {
-                align-items: flex-start;
+            h3 {
+                font-size: 1rem;
             }
 
-            .smallCard {
-                width: 100%;
-                max-width: 170px;
+            p {
+                font-size: .7rem;
+            }
 
-                &.shift-top-100 {
-                    margin-top: -170px;
-                }
-
-                &.shift-top-50 {
-                    margin-top: -100px;
-                }
-
-                &.shift-bottom-100 {
-                    margin-top: 50px;
-                }
-
-                img {
-                    width: 100%;
-                    height: auto;
-
-                    &.logo {
-                        width: 100px;
-                        height: auto;
-                        margin-top: -4px;
-
-                        @media (max-width: 768px) {
-                            width: 60px;
-                        }
-                    }
+            img {
+                &.icon {
+                    width: 60px;
                 }
             }
         }
-
-        @media(max-width: 768px) {
-            .shift-top-50, .shift-top-100 {
-                margin-top: 0;
-            }
-
-            &.small {
-            align-items: flex-end;
-
-            &.left {
-                align-items: flex-start;
-            }
-
-            .smallCard {
-                width: 100%;
-
-                &.shift-top-100 {
-                    margin-top: 0;
-                }
-
-                &.shift-top-50 {
-                    margin-top: 0;
-                }
-
-                &.shift-bottom-100 {
-                    margin-top: 0;
-                }
-
-                img {
-                    width: 100%;
-                    height: auto;
-
-                    &.logo {
-                        width: 100px;
-                        height: auto;
-                        margin-top: -4px;
-
-                        @media (max-width: 768px) {
-                            width: 60px;
-                        }
-                    }
-                }
-            }
-        }
+        
     }
 `;
