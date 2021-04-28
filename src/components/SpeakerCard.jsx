@@ -30,7 +30,7 @@ const SpeakerCard = ({name, img, stack, speach, twitter, instagram, linkedin, sc
                         {twitter && <a href={twitter}><AiOutlineTwitter /></a>}
                         <a href={instagram}><AiFillInstagram /></a>
                         <a href={linkedin}><FaLinkedinIn /></a>
-                        <span>{schedule}</span>
+                        {schedule && <span>{schedule}</span>}
                     </div>
                 </div>
             </div>
