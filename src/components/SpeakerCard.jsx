@@ -15,7 +15,7 @@ const SpeakerCard = ({name, img, stack, speach, twitter, instagram, linkedin, sc
     // }
 
     return (
-        <SpeakerCardStyle>
+        <SpeakerCardStyle data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
             <div className="row">
                 <div className="col-md-3">
                     <img src={img} alt="speaker face"/>
@@ -27,7 +27,7 @@ const SpeakerCard = ({name, img, stack, speach, twitter, instagram, linkedin, sc
                     {/* <p>{speach} {more && !toggleMore ? <span onClick={handleMore}>Read More</span> : ''}</p> */}
                     {/* {toggleMore && <p>{more}</p>} */}
                     <div className="social-icon">
-                        <a href={twitter}><AiOutlineTwitter /></a>
+                        {twitter && <a href={twitter}><AiOutlineTwitter /></a>}
                         <a href={instagram}><AiFillInstagram /></a>
                         <a href={linkedin}><FaLinkedinIn /></a>
                         <span>{schedule}</span>

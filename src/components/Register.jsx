@@ -6,9 +6,9 @@ const Register = () => {
         <RegisterContainer>
             <div className="container">
                 <RegisterStyle id="register">
-                    <h1 className="text-center">REGISTER HERE</h1>
+                    <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" className="text-center">REGISTER HERE</h1>
 
-                    <form>
+                    <form data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
                         <div className="inputGroup">
                             <label>Name</label>
                             <input type="text" required/>

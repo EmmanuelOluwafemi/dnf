@@ -24,13 +24,13 @@ const Hero = () => {
             <Header />
             <div className="container">
                 <div className="text-item">
-                    <h3>DESIGNERS NOW <span>FOUNDERS</span></h3>
-                    <p>Connecting with <span>Designers</span> that are now <span>Founders</span> in the Industry </p>
+                    <h3 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">DESIGNERS NOW <span>FOUNDERS</span></h3>
+                    <p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000">Connecting with <span>Designers</span> that are now <span>Founders</span> in the Industry </p>
                 </div>
 
                 {/* Desktop */}
                 <div className="d-none d-md-flex row align-items-center">
-                    <div className="col-md-4 designers-card">
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" className="col-md-4 designers-card">
                         <img src={designer_1} alt="Ayo Onasanya face"/>
                         <h3>Ayo Onasanya</h3>
                         <p>Founder, Acumen Digital</p>
@@ -38,21 +38,21 @@ const Hero = () => {
                     </div>
 
                     <div className="col-md-4">
-                        <div className="col-md-12 designers-card">
+                        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" className="col-md-12 designers-card">
                             <img src={designer_2} alt="Ayo Onasanya face"/>
                             <h3>James Baduor</h3>
                             <p>Co-founder, ADPList</p>
                             <img className="icon" src={designer_2_logo} alt="designer 1 logo"/>
                         </div>
-                        <div className="col-md-12 designers-card mt-5">
+                        <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000" className="col-md-12 designers-card mt-5">
                             <img src={designer_3} alt="Ayo Onasanya face"/>
-                            <h3>Abiodun Okunade</h3>
-                            <p>Team Lead</p>
+                            <h3>Nandi Manning</h3>
+                            <p>UX HER Founder</p>
                             <img className="icon" src={logo} alt="designer 1 logo"/>
                         </div>
                     </div>
 
-                    <div className="col-md-4 designers-card">
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" className="col-md-4 designers-card">
                         <img src={designer_4} alt="Ayo Onasanya face"/>
                         <h3>Victor Fatanmi</h3>
                         <p>Founder, FourthCanvas</p>
@@ -63,26 +63,26 @@ const Hero = () => {
                 {/* Mobile */}
 
                 <div className="d-flex d-md-none row">
-                    <div className="col-6 designers-card">
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" className="col-6 designers-card">
                         <img src={designer_1} alt="Ayo Onasanya face"/>
                         <h3>Ayo Onasanya</h3>
                         <p>Founder, Acumen Digital</p>
                         <img className="icon" src={designer_1_logo} alt="designer 1 logo"/>
                     </div>
 
-                    <div className="col-6 designers-card pt-4">
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" className="col-6 designers-card pt-4">
                         <img src={designer_2} alt="Ayo Onasanya face"/>
                         <h3>James Baduor</h3>
                         <p>Co-founder, ADPList</p>
                         <img className="icon" src={designer_2_logo} alt="designer 1 logo"/>
                     </div>
-                    <div className="col-6 designers-card">
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000" className="col-6 designers-card">
                         <img src={designer_3} alt="Ayo Onasanya face"/>
-                        <h3>Abiodun Okunade</h3>
-                        <p>Team Lead</p>
+                        <h3>Nandi Manning</h3>
+                        <p>UX HER Founder</p>
                         <img className="icon" src={logo} alt="designer 1 logo"/>
                     </div>
-                    <div className="col-6 designers-card pt-4">
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2500" className="col-6 designers-card pt-4">
                         <img src={designer_4} alt="Ayo Onasanya face"/>
                         <h3>Victor Fatanmi</h3>
                         <p>Founder, FourthCanvas</p>

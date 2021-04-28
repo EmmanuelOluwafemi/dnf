@@ -46,11 +46,13 @@ const Speaker = () => {
         },
         {
             id: 4,
-            name: "Abiodun Okunade",
-            stack: "Product Designer",
+            name: "Nandi Manning",
+            stack: "UX HER Founder",
             img: designer_3,
             schedule: "",
-            speach: "Lorem mollit amet adipisicing ad id esse Lorem nisi exercitation ea consectetur. Sint consectetur anim in ex ullamco consectetur qui sint. Sit quis labore fugiat nisi magna. Minim occaecat est nisi sit minim reprehenderit ipsum ex exercitation. Eu labore eiusmod culpa aliqua nulla commodo. Dolor minim commodo excepteur proident esse magna in reprehenderit et nulla irure consequat occaecat consequat. Id cupidatat nulla ea sint ea.",
+            speach: "UX HER Founder, Nandi Manning, is a User Experience Designer with 4 years of experience bringing digital products to market. Upon entering the design industry in 2017, Nandi soon realized that none of her teammates looked like her or shared her lived experiences. She found it challenging to navigate her career in user experience design alone. Not knowing other women of color in her profession, she started searching for other women of color in her industry online. All of the women she came in contact with yearned for the same thing: community. With this need, she created UX HER.",
+            instagram: "https://www.instagram.com/nandimanning/",
+            linkedin: "https://www.linkedin.com/in/nandi-manning-bb7a7593/",
         }
     ]
 

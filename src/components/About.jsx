@@ -6,21 +6,21 @@ const About = () => {
         <AboutStyle id="about">
             <div className="container">
                 <div className="aboutContainer">
-                    <h3>ABOUT <br/> DESIGNERS NOW FOUNDERS</h3>
-                    <h6>Connecting with exceptional minds</h6>
-                    <p>A lot of times, young and aspiring UIUX designers limit the possibility of what they can do, 
+                    <h3 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">ABOUT <br/> DESIGNERS NOW FOUNDERS</h3>
+                    <h6 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">Connecting with exceptional minds</h6>
+                    <p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000">A lot of times, young and aspiring UIUX designers limit the possibility of what they can do, 
                     they look at their role and work from a small perspective and it can limit their potential. </p>
 
-                    <p>We want to change that narrative, hence the reason for this series “Designer Now Founders” </p>
+                    <p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2500">We want to change that narrative, hence the reason for this series “Designer Now Founders” </p>
 
-                    <p>The focus of the series is to show young designers how to become better in solving problems, look at 
+                    <p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="3000">The focus of the series is to show young designers how to become better in solving problems, look at 
                     situations from a broader perspective and create valuable solutions that can lead to the establishment of 
                     relevant businesses or companies.</p>
 
-                    <p className="pb-5">We are bringing in experienced product designers who are now founder's of thriving 
+                    <p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="3500" className="pb-5">We are bringing in experienced product designers who are now founder's of thriving 
                     companies and organisations to come speak with you in this series so you can learn from their thought process, 
                     expand your problem solving skills and be inspired to take up more challenge</p>
-                    <a className="mt-4" href="./#register">REGISTER NOW</a>
+                    <a data-aos="fade-right" data-aos-easing="linear" data-aos-duration="4000" className="mt-4" href="./#register">REGISTER NOW</a>
                 </div>
             </div>
         </AboutStyle>
