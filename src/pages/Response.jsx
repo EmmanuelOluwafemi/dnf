@@ -78,6 +78,10 @@ const ResponseStyle = Styled.section`
     overflow: hidden;
     background: #fff;
 
+    @media (max-width: 768px) {
+        overflow-y: scroll;
+    }
+
     .container {
         position: relative;
 
