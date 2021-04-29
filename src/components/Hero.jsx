@@ -75,19 +75,19 @@ const Hero = () => {
                         <img src={designer_2} alt="Ayo Onasanya face"/>
                         <h3>James Baduor</h3>
                         <p>Co-founder, ADPList</p>
-                        <img className="icon" src={designer_2_logo} alt="designer 1 logo"/>
+                        <img className="icon" src={designer_2_logo} alt="designer 2 logo"/>
                     </div>
                     <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000" className="col-6 designers-card">
                         <img src={designer_3} alt="Ayo Onasanya face"/>
                         <h3>Nandi Manning</h3>
                         <p>UX HER Founder</p>
-                        <img className="icon" src={logo} alt="designer 1 logo"/>
+                        <img className="icon" src={designer_4_logo} alt="designer 3 logo"/>
                     </div>
                     <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2500" className="col-6 designers-card pt-4">
                         <img src={designer_4} alt="Ayo Onasanya face"/>
                         <h3>Victor Fatanmi</h3>
                         <p>Founder, FourthCanvas</p>
-                        <img className="icon" src={designer_3_logo} alt="designer 1 logo"/>
+                        <img className="icon" src={designer_3_logo} alt="designer 4 logo"/>
                     </div>
                 </div>
 
