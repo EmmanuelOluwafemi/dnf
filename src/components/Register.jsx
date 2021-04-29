@@ -1,32 +1,61 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Styled from 'styled-components';
 
+import { useForm } from "react-hook-form";
+
+import { useHistory } from "react-router-dom";
+
+
 const Register = () => {
+    const { register, handleSubmit } = useForm();
+    const history = useHistory();
+    const [loading, setLoading] = useState(false);
+
+    const onSubmit = data => {
+        console.log(data)
+        setLoading(true);
+        fetch("https://api.apispreadsheets.com/data/11609/", {
+            method: "POST",
+            body: JSON.stringify({"data": data}),
+        }).then(res =>{
+            if (res.status === 201){
+                // SUCCESS
+                setLoading(false);
+                history.push('/response');
+            }
+            else{
+                // ERROR
+                setLoading(false);
+                console.log(res);
+            }
+        })
+    }
+
     return (
         <RegisterContainer>
             <div className="container">
                 <RegisterStyle id="register">
                     <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" className="text-center">REGISTER HERE</h1>
 
-                    <form data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+                    <form data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500" method="post" onSubmit={handleSubmit(onSubmit)} name="google-sheet">
                         <div className="inputGroup">
                             <label>Name</label>
-                            <input type="text" required/>
+                            <input type="text" name="name" {...register('name', { required: true })} />
                         </div>
                         <div className="inputGroup">
                             <label>Email</label>
-                            <input type="email" required/>
+                            <input type="email" name="email" {...register('email', { required: true })} />
                         </div>
                         <div className="inputGroup">
                             <label>Profession</label>
-                            <input type="text" required/>
+                            <input type="text" name="profession" {...register('profession', { required: true })} />
                         </div>
                         <div className="inputGroup">
                             <label>Location</label>
-                            <input type="text" required/>
+                            <input type="text" name="location" {...register('location', { required: true })} />
                         </div>
                         <div className="text-center">
-                            <button type="submit">Register</button>
+                            <input className="buttonSubmit" type="submit" value={loading ? 'Loading...': 'Register'} />
                         </div>
                     </form>
                 </RegisterStyle>
@@ -34,6 +63,7 @@ const Register = () => {
         </RegisterContainer>
     )
 }
+
 
 export default Register;
 
@@ -97,7 +127,7 @@ const RegisterStyle = Styled.div`
             }
         }
 
-        button {
+        .buttonSubmit {
             padding: 1.2rem 5rem;
             background: #34296B;
             color: #fff;

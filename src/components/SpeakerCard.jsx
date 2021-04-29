@@ -6,13 +6,7 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiFillInstagram } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 
-const SpeakerCard = ({name, img, stack, speach, twitter, instagram, linkedin, schedule, more}) => {
-
-    // const [toggleMore, setMore] = useState(false);
-
-    // const handleMore = () => {
-    //     setMore(!toggleMore);
-    // }
+const SpeakerCard = ({name, img, stack, speach, twitter, instagram, linkedin, schedule}) => {
 
     return (
         <SpeakerCardStyle data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
@@ -24,12 +18,10 @@ const SpeakerCard = ({name, img, stack, speach, twitter, instagram, linkedin, sc
                     <h3>{name}</h3>
                     <p>{stack}</p>
                     <p>{speach}</p>
-                    {/* <p>{speach} {more && !toggleMore ? <span onClick={handleMore}>Read More</span> : ''}</p> */}
-                    {/* {toggleMore && <p>{more}</p>} */}
                     <div className="social-icon">
-                        {twitter && <a href={twitter}><AiOutlineTwitter /></a>}
-                        <a href={instagram}><AiFillInstagram /></a>
-                        <a href={linkedin}><FaLinkedinIn /></a>
+                        {twitter && <a target="_blank" rel="noreferrer" href={twitter}><AiOutlineTwitter /></a>}
+                        <a target="_blank" rel="noreferrer" href={instagram}><AiFillInstagram /></a>
+                        <a target="_blank" rel="noreferrer" href={linkedin}><FaLinkedinIn /></a>
                         {schedule && <span>{schedule}</span>}
                     </div>
                 </div>
