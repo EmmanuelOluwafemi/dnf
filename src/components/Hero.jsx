@@ -4,9 +4,6 @@ import Styled from 'styled-components';
 import pattern from '../assets/images/pattern.svg';
 import Header from './Header';
 
-// Perxels logo
-import logo from '../assets/images/logo.svg';
-
 // Images
 import designer_1 from '../assets/images/designer_1.jpg';
 import designer_2 from '../assets/images/designer_2.jpg';
