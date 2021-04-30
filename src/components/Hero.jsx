@@ -153,6 +153,7 @@ const HeroStyle = Styled.section`
 
                 &.small {
                     width: 64px;
+                    margin-top: .7rem;
                 }
             }
         }
